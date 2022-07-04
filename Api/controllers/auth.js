@@ -10,6 +10,7 @@ export const register = async (req, res, next) => {
         username: req.body.username,
         email: req.body.email,
         password: hash,
+        isAdmin:req.body.isAdmin,
     });
 
     try {
